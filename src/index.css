@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Amiri", Georgia, "Times New Roman", serif;
+  --font-sans: "IBM Plex Sans Arabic", system-ui, -apple-system, sans-serif;
+
+  --color-ivory: #FBF8F1;
+  --color-parchment: #F3EDE0;
+  --color-parchment-deep: #EAE1CE;
+  --color-stone-border: #DFD4BC;
+  --color-ink: #231811;
+  --color-walnut: #3D2B1F;
+  --color-muted: #6B5849;
+  --color-gold: #B48A3E;
+  --color-gold-dark: #8E6928;
+  --color-olive: #2F4532;
+  --color-olive-dark: #223425;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    background-color: var(--color-ivory);
+    color: var(--color-ink);
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-serif);
+  }
+
+  button:not(:disabled),
+  a[href] {
+    cursor: pointer;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 2px;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Subtle manuscript paper grain overlay */
+.manuscript-surface {
+  background-color: var(--color-ivory);
+  background-image: radial-gradient(rgba(180, 138, 62, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "أثر المسلمين | ATHAR AL-MUSLIMEEN",
+  "description": "منصة تفاعلية رقمية للتاريخ الإسلامي والسرد الوثائقي: نروي التاريخ، لنفهم الحاضر.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

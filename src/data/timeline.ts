@@ -1,0 +1,205 @@
+import { TimelineEvent } from '../types/history';
+
+export const TIMELINE_EVENTS: TimelineEvent[] = [
+  {
+    id: 'tl-11-saqifah',
+    eraId: 'rashidun',
+    yearHijriNum: 11,
+    yearHijriLabel: '١١ هـ',
+    yearGregorianLabel: '٦٣٢ م',
+    title: 'بيعة السقيفة وبدء الخلافة الراشدة',
+    category: 'سياسي',
+    location: 'المدينة المنورة',
+    summary:
+      'اجتماع المهاجرين والأنصار في سقيفة بني ساعدة ومبايعة أبي بكر الصديق أول خليفة للمسلمين بعد وفاة النبي صلى الله عليه وسلم.',
+    historicalSignificance:
+      'أرست هذه الواقعة مبدأ انتقال القيادة بالشورى والبيعة وحفظت وحدة الجماعة السياسية في لحظة حرجة.',
+    relatedEventIds: ['tl-11-quran'],
+    linkedStoryId: 'story-rashidun-state-diwan',
+    sourceRef: 'تاريخ الطبري (ج٣) · البداية والنهاية لابن كثير',
+  },
+  {
+    id: 'tl-11-quran',
+    eraId: 'rashidun',
+    yearHijriNum: 12,
+    yearHijriLabel: '١١–١٢ هـ',
+    yearGregorianLabel: '٦٣٢–٦٣٣ م',
+    isApproximate: true,
+    title: 'جمع القرآن في صحف موحدة',
+    category: 'عمراني وثقافي',
+    location: 'المدينة المنورة',
+    summary:
+      'تكليف زيد بن ثابت بجمع القرآن الكريم في صحف مكتوبة عقب استشهاد عدد من القراء في حروب الردة.',
+    historicalSignificance:
+      'الخطوة المؤسسية الأولى لحفظ النص القرآني مكتوباً قبل اتساع الفتوحات.',
+    relatedEventIds: ['tl-11-saqifah', 'tl-25-mushaf'],
+    linkedStoryId: 'story-rashidun-state-diwan',
+    sourceRef: 'صحيح البخاري (كتاب فضائل القرآن) · فتوح البلدان',
+  },
+  {
+    id: 'tl-15-conquests',
+    eraId: 'rashidun',
+    yearHijriNum: 15,
+    yearHijriLabel: 'نحو ١٥ هـ',
+    yearGregorianLabel: '٦٣٦ م',
+    isApproximate: true,
+    title: 'معركتا اليرموك والقادسية',
+    category: 'جغرافي وعسكري',
+    location: 'الشام والعراق',
+    summary:
+      'انتصاران عسكريان حاسمان في عهد عمر بن الخطاب فتحا المجال أمام دخول بلاد الشام والعراق ضمن الدولة الإسلامية.',
+    historicalSignificance:
+      'أدّيا إلى تحوّل الدولة من كيان إقليمي في الجزيرة العربية إلى قوة دولية تدير أراضي وأنهاراً ومجتمعات متنوعة.',
+    relatedEventIds: ['tl-17-diwan'],
+    linkedStoryId: 'story-rashidun-state-diwan',
+    sourceRef: 'تاريخ الطبري (ج٣–٤) · فتوح البلدان للبلاذري',
+  },
+  {
+    id: 'tl-17-diwan',
+    eraId: 'rashidun',
+    yearHijriNum: 17,
+    yearHijriLabel: 'نحو ١٥–٢٠ هـ',
+    yearGregorianLabel: '٦٣٦–٦٤١ م',
+    isApproximate: true,
+    title: 'تأسيس الدواوين وتمصير الكوفة والبصرة والفسطاط',
+    category: 'إداري',
+    location: 'المدينة، العراق، ومصر',
+    summary:
+      'إنشاء ديوان الجند والعطاء، اعتماد التأريخ الهجري، وتأسيس حواضر إدارية وعلمية جديدة خارج الجزيرة العربية.',
+    historicalSignificance:
+      'التأسيس الفعلي للجهاز الإداري والمالي المستدام وفصل القضاء عن الولاية التنفيذية.',
+    relatedEventIds: ['tl-15-conquests', 'tl-77-arabization'],
+    linkedStoryId: 'story-rashidun-state-diwan',
+    sourceRef: 'فتوح البلدان للبلاذري · كتاب الخراج لأبي يوسف',
+  },
+  {
+    id: 'tl-25-mushaf',
+    eraId: 'rashidun',
+    yearHijriNum: 25,
+    yearHijriLabel: 'نحو ٢٥–٣٠ هـ',
+    yearGregorianLabel: '٦٤٦–٦٥١ م',
+    isApproximate: true,
+    title: 'نسخ المصحف الإمام وبناء الأسطول البحري',
+    category: 'عمراني وثقافي',
+    location: 'المدينة والشام ومصر',
+    summary:
+      'توحيد نسخ المصحف وإرسالها إلى الأمصار في عهد عثمان بن عفان، بالتوازي مع تدشين أول أسطول بحري إسلامي في المتوسط.',
+    historicalSignificance:
+      'حماية وحدة القراءة القرآنية في الأمصار البعيدة وتأمين السواحل البحرية للدولة.',
+    relatedEventIds: ['tl-11-quran'],
+    sourceRef: 'تاريخ الطبري (ج٤) · المصاحف لابن أبي داود',
+  },
+  {
+    id: 'tl-36-kufa',
+    eraId: 'rashidun',
+    yearHijriNum: 36,
+    yearHijriLabel: '٣٦–٤٠ هـ',
+    yearGregorianLabel: '٦٥٦–٦٦١ م',
+    title: 'نقل مركز الخلافة إلى الكوفة وأحداث الفتنة الأولى',
+    category: 'سياسي',
+    location: 'الكوفة والشام',
+    summary:
+      'انتقال علي بن أبي طالب إلى الكوفة، ووقوع صراعات سياسية وعسكرية داخلية أبرزها الجمل وصفين والتحكيم.',
+    historicalSignificance:
+      'مثّلت هذه المرحلة اختباراً عميقاً لبنية السلطة ومهدت لتحول شكل الحكم في نهاية العقد الرابع الهجري.',
+    relatedEventIds: ['tl-41-umayyad'],
+    sourceRef: 'تاريخ الطبري (ج٤–٥) · البداية والنهاية',
+  },
+  {
+    id: 'tl-41-umayyad',
+    eraId: 'umayyad',
+    yearHijriNum: 41,
+    yearHijriLabel: '٤١ هـ',
+    yearGregorianLabel: '٦٦١ م',
+    title: 'عام الجماعة وقيام الدولة الأموية في دمشق',
+    category: 'سياسي',
+    location: 'دمشق والكوفة',
+    summary:
+      'تنازل الحسن بن علي حقناً للدماء ومبايعة معاوية بن أبي سفيان، وانتقال عاصمة الخلافة إلى دمشق.',
+    historicalSignificance:
+      'بداية الحكم الأموي وتطور المؤسسات المركزية كالبريد وديوان الخاتم وتأسيس القيروان (نحو ٥٠ هـ).',
+    relatedEventIds: ['tl-36-kufa', 'tl-77-arabization'],
+    sourceRef: 'تاريخ الطبري (ج٥) · الكامل في التاريخ',
+  },
+  {
+    id: 'tl-72-dome',
+    eraId: 'umayyad',
+    yearHijriNum: 72,
+    yearHijriLabel: '٧٢ هـ',
+    yearGregorianLabel: '٦٩١ م',
+    title: 'بناء قبة الصخرة في بيت المقدس',
+    category: 'عمراني وثقافي',
+    location: 'بيت المقدس',
+    summary:
+      'أمر الخليفة عبد الملك بن مروان ببناء قبة الصخرة، وُثّق ذلك في النقش الكوفي الفسيفسائي الباقي حتى اليوم.',
+    historicalSignificance:
+      'أقدم أثر معماري إسلامي ضخم باقٍ، يعكس تطور الهندسة والخط الكوفي والزخرفة الأموية.',
+    relatedEventIds: ['tl-77-arabization'],
+    sourceRef: 'النقش التأسيسي بقبة الصخرة · البلاذري وكتب البلدان',
+  },
+  {
+    id: 'tl-77-arabization',
+    eraId: 'umayyad',
+    yearHijriNum: 77,
+    yearHijriLabel: '٧٧–٨٦ هـ',
+    yearGregorianLabel: '٦٩٦–٧٠٥ م',
+    title: 'ضرب الدينار العربي الخالص وتعريب الدواوين',
+    category: 'إداري',
+    location: 'دمشق والعراق ومصر',
+    summary:
+      'استقلال النظام النقدي بسكّ العملة العربية الكوفية، ونقل دواوين الخراج والإدارة من اليونانية والفارسية إلى العربية.',
+    historicalSignificance:
+      'أرسى وحدة إدارية ولغوية واقتصادية عبر إمبراطورية ممتدة من المتوسط إلى خراسان.',
+    relatedEventIds: ['tl-17-diwan', 'tl-72-dome'],
+    linkedStoryId: 'story-umayyad-arabization',
+    sourceRef: 'الوزراء والكتاب للجهشياري · الشواهد النقدية المؤرخة (٧٧ هـ)',
+  },
+  {
+    id: 'tl-92-andalus',
+    eraId: 'umayyad',
+    yearHijriNum: 92,
+    yearGregorianLabel: '٧١١ م',
+    yearHijriLabel: '٩٢ هـ',
+    title: 'فتح الأندلس وبلاد ما وراء النهر والسند',
+    category: 'جغرافي وعسكري',
+    location: 'الأندلس، سمرقند، والسند',
+    summary:
+      'في عهد الوليد بن عبد الملك بلغ التوسع الأموي ذروته الجغرافية في الغرب الأوروبي والشرق الآسيوي، بالتزامن مع بناء الجامع الأموي بدمشق.',
+    historicalSignificance:
+      'تشكّل المجال الحضاري والتجاري الواسع الذي ربط بين غرب المتوسط وآسيا الوسطى.',
+    relatedEventIds: ['tl-99-umar2'],
+    sourceRef: 'تاريخ الطبري (ج٦) · فتوح البلدان',
+  },
+  {
+    id: 'tl-99-umar2',
+    eraId: 'umayyad',
+    yearHijriNum: 99,
+    yearHijriLabel: '٩٩–١٠١ هـ',
+    yearGregorianLabel: '٧١٧–٧٢٠ م',
+    title: 'إصلاحات عمر بن عبد العزيز وتدوين الحديث رسمياً',
+    category: 'عمراني وثقافي',
+    location: 'دمشق والمدينة المنورة',
+    summary:
+      'إعادة هيكلة السياسة المالية لصالح المساواة في الضرائب مع الموالي، وإطلاق أول مشروع رسمي لجمع وتدوين الحديث النبوي.',
+    historicalSignificance:
+      'منعطف علمي وإصلاحي حفظ مدونات السنة الأولى وشارك فيه أمثال ابن شهاب الزهري.',
+    relatedEventIds: ['tl-92-andalus'],
+    sourceRef: 'الطبقات الكبرى لابن سعد · سير أعلام النبلاء',
+  },
+  {
+    id: 'tl-132-fall',
+    eraId: 'umayyad',
+    yearHijriNum: 132,
+    yearHijriLabel: '١٣٢ هـ',
+    yearGregorianLabel: '٧٥٠ م',
+    title: 'معركة الزاب ونهاية الخلافة الأموية في المشرق',
+    category: 'سياسي',
+    location: 'نهر الزاب الكبير (شمال العراق)',
+    summary:
+      'هزيمة آخر خلفاء بني أمية في دمشق مروان بن محمد أمام القوات العباسية الصاعدة من خراسان.',
+    historicalSignificance:
+      'نهاية الحقبة الأموية في المشرق وبداية عصر تاريخي جديد يخرج عن نطاق هذه المرحلة الأولى من المنصة.',
+    relatedEventIds: ['tl-41-umayyad'],
+    sourceRef: 'تاريخ الطبري (ج٧) · الكامل في التاريخ',
+  },
+];
